@@ -33,8 +33,3 @@ authserver:
     hostname: auth-service
     port: 5000
     contextPath: /uaa
-
-security:
-  oauth2:
-    resource:
-      user-info-uri: http://${authserver.hostname}:${authserver.port}${authserver.contextPath}/current
